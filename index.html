@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The SAD Archive | Evidence Board</title>
+    <title>The SAD Archive | Complete Evidence Board</title>
     
-    <!-- Importing Typewriter and Handwritten Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Caveat:wght@700&display=swap" rel="stylesheet">
     
-    <!-- Tailwind CSS Engine -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
@@ -34,7 +32,7 @@
             background-size: 200% 200%;
         }
 
-        /* Brown Craft Paper Note (The Typewriter Vibe) */
+        /* Brown Craft Paper Note */
         .craft-paper {
             background-color: #b59f84;
             background-image: url("https://www.transparenttextures.com/patterns/cardboard-flat.png");
@@ -73,7 +71,7 @@
             z-index: 10;
         }
 
-        /* Red Marker Circle - Frantic Handwriting */
+        /* Red Marker Circle */
         .red-circle {
             border: 3px solid #b30000;
             border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
@@ -133,95 +131,83 @@
 </head>
 <body class="py-12 px-4 relative">
 
-    <!-- The string that ties the evidence together -->
     <div class="red-string-bg"></div>
 
-    <!-- MAIN BOARD CONTAINER -->
     <div id="board-root" class="max-w-3xl mx-auto space-y-16 relative z-10">
 
-        <!-- ================= CRAFT PAPER: THE ORIGINS ================= -->
         <article class="craft-paper p-8 relative transform rotate-1 border border-stone-700">
             <div class="masking-tape" style="transform: translateX(-50%) rotate(2deg);"></div>
             
             <div class="text-center font-bold text-xs uppercase tracking-widest border-b-2 border-stone-800 pb-2 mb-6">
-                ARCHIVAL INTELLIGENCE // ORIGIN FILE
+                REPORT FOR DIVISION OF COVERT OPERATIONS // PAGE 01 / 08
             </div>
 
             <div class="my-6 text-center">
-                <span class="handwritten-note handwritten-red text-3xl block -rotate-3 mb-2">The Archive Origins</span>
+                <span class="handwritten-note handwritten-red text-3xl block -rotate-3 mb-2">Special Masterclass Dispatch!</span>
                 <h1 class="font-black text-3xl uppercase tracking-tighter leading-tight py-3 border-y-4 border-stone-800">
-                    INDIAN SERIAL KILLER <br><span class="red-circle mt-2">DATABASE</span>
+                    AN INTERACTIVE SESSION WITH AN <span class="yellow-highlight">INTERPOL OFFICER</span>
                 </h1>
                 <div class="mt-4">
-                    <span class="font-bold text-sm uppercase bg-black text-stone-200 px-3 py-1">CURATED BY AME</span>
+                    <span class="font-bold text-sm uppercase bg-black text-stone-200 px-3 py-1">FEATURING DR. SAD</span>
                 </div>
+                <p class="text-xs font-bold mt-2 uppercase tracking-wider text-stone-800">
+                    INDIA'S LEADING RESEARCHER ON INDIAN SERIAL KILLERS
+                </p>
             </div>
 
-            <!-- "I've been meaning to write" block -->
-            <div class="text-center my-10 py-6">
-                <p class="text-sm italic mb-2 text-stone-700">Type your field notes here...</p>
+            <div class="text-center my-8 py-4 border-y border-dashed border-stone-500">
                 <textarea class="custom-input" rows="1" placeholder="I've been meaning to write..."></textarea>
             </div>
 
+            <div class="border border-black p-4 bg-white/60 relative my-4">
+                <span class="font-bold block uppercase text-xs border-b border-black pb-1 mb-2">[ DEDICATION DISPATCH ]</span>
+                <p class="italic leading-relaxed text-sm">
+                    A whimsical, warm, and highly appreciative account of today's special lecture. Dedicated to Dr. SAD—a fun boomer with a Gen-Z brain who started from scratch and built India's premier serial killer archive through sheer fearless empirical field research!
+                </p>
+                <span class="handwritten-note handwritten-red text-xl text-right block mt-2">— Recorded with utmost respect by Ame</span>
+            </div>
         </article>
 
 
-        <!-- ================= TELEGRAM PAPER: THE EPIPHANY ================= -->
         <article class="telegram-paper p-8 relative transform -rotate-1">
             <div class="masking-tape" style="width: 200px; transform: translateX(-50%) rotate(-1deg);"></div>
 
             <div class="bg-black text-stone-200 p-2 flex justify-between items-center mb-6">
-                <span class="text-xs font-bold tracking-widest">FIELD REPORT // EXHIBIT A</span>
+                <span class="text-xs font-bold tracking-widest">FIELD REPORT // EXHIBIT A (PAGE 02 / 08)</span>
                 <span class="font-mono text-[10px]">ORIGIN CODE: #2026-SAD-01</span>
             </div>
 
-            <h2 class="font-bold text-xl uppercase mb-3">01. SCROLLING IS ALL IT TOOK</h2>
+            <h2 class="font-bold text-xl uppercase mb-3">01. SCROLLING IS ALL IT TOOK FOR THE IDEA</h2>
 
-            <p class="text-base mb-6 leading-relaxed">
-                It started the way all great 21st-century academic revolutions begin: scrolling, scrolling, scrolling, and scrolling some more. Every corner of the internet was obsessed with the exact same American serial killers. Ted Bundy here, Jeffrey Dahmer there. Wikipedia was <span class="yellow-highlight">THE reservoir</span> back in the days before AI did our thinking.
+            <p class="text-base mb-4 leading-relaxed">
+                It started the way all great 21st-century academic revolutions begin: scrolling, scrolling, scrolling, and scrolling some more. Every corner of the internet was obsessed with the exact same American serial killers. Ted Bundy here, Jeffrey Dahmer there. Wikipedia was THE reservoir back in the days before AI did our thinking.
             </p>
 
-            <!-- Battered quote box mimicking the Se7en board notes -->
-            <div class="p-6 border-4 border-stone-800 bg-stone-300/60 text-base my-6 relative transform rotate-1">
-                <span class="handwritten-note handwritten-red text-2xl absolute -top-5 right-4 bg-stone-200 px-3 border-2 border-stone-800 shadow-md transform rotate-3">The Epiphany!</span>
-                <p class="font-bold">
+            <div class="p-4 border-2 border-black bg-stone-300/80 text-base my-6 relative transform rotate-1">
+                <span class="handwritten-note text-2xl text-black absolute -top-5 right-4 bg-stone-200 px-3 border-2 border-stone-800 shadow-md">The Epiphany!</span>
+                <p class="font-bold italic">
                     "The world has only ever celebrated Western serial killers. But what about us? India has Serial Killers worth studying too, you know?"
                 </p>
             </div>
+
+            <blockquote class="my-4 p-4 border-l-4 border-black text-base font-typewriter bg-white/70">
+                "<span class="yellow-highlight">I want to help these killers climb the ladder of success.</span> One day, it will be an Indian Serial Killer's face on Wikipedia, just like famous Mr. Teddy."
+                <span class="block font-bold text-right mt-2">— Dr. SAD</span>
+            </blockquote>
         </article>
 
-        <!-- ================= THE POLAROID EVIDENCE SECTION ================= -->
-        <div class="flex flex-col sm:flex-row justify-center gap-8 my-8 relative">
-            <!-- Simulated Red String line connecting them -->
-            <div class="hidden sm:block absolute top-1/2 left-10 right-10 h-0.5 bg-red-700 z-0 transform -rotate-2 shadow-sm"></div>
 
-            <div class="polaroid transform -rotate-3 z-10 w-64 mx-auto sm:mx-0">
-                <div class="h-40 bg-stone-800 mb-2 flex items-center justify-center text-stone-500 overflow-hidden relative">
-                    <!-- Placeholder for crime scene / map photo -->
-                    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-30"></div>
-                    <span class="font-bold text-xs">ATTACH FIELD PHOTO</span>
-                </div>
-                <div class="text-center handwritten-note text-xl">Suspected ARK Location</div>
-            </div>
-
-            <div class="polaroid transform rotate-2 z-10 w-64 mx-auto sm:mx-0">
-                <div class="h-40 bg-stone-900 mb-2 flex items-center justify-center text-stone-500 relative">
-                    <span class="font-bold text-xs text-center px-4 leading-tight">
-                        <span class="heavy-redaction mb-1">CLASSIFIED</span><br>
-                        PROFILE UNAVAILABLE
-                    </span>
-                </div>
-                <div class="text-center handwritten-note handwritten-red text-xl">Grab it now.</div>
-            </div>
-        </div>
-
-        <!-- ================= TELEGRAM PAPER: THE TRAP ================= -->
         <article class="telegram-paper p-8 relative transform rotate-1">
             <div class="masking-tape" style="transform: translateX(-50%) rotate(2deg);"></div>
 
-            <h2 class="font-bold text-xl uppercase mb-4 border-b border-black pb-2">02. WHO IS A SERIAL KILLER?</h2>
+            <div class="bg-black text-stone-200 p-2 flex justify-between items-center mb-6">
+                <span class="text-xs font-bold tracking-widest">FIELD REPORT // EXHIBIT B (PAGE 03 / 08)</span>
+                <span class="font-mono text-[10px]">CONCEPTUAL TRAP</span>
+            </div>
 
-            <div class="text-center my-6 p-3 border-2 border-dashed border-black bg-stone-400 text-base font-bold transform -rotate-1">
+            <h2 class="font-bold text-xl uppercase mb-3">02. WHO IS A SERIAL KILLER?</h2>
+
+            <div class="text-center my-4 p-3 border border-black bg-stone-300 text-base font-bold transform -rotate-1">
                 "Serial killers by legal nature, not serial killers by my conscience!"
             </div>
 
@@ -229,51 +215,161 @@
                 Dr. SAD posed a diagnostic question to the class: Is a serial killer a person who is:
             </p>
 
-            <div class="my-6 p-5 border border-stone-800 bg-white/60 text-base space-y-3 shadow-inner">
-                <p>[ ] Option A: A person who is <span class="heavy-redaction text-stone-300">ACCUSED</span> of Serial Killings?</p>
-                <p>[ ] Option B: A person who is <span class="heavy-redaction text-stone-300">CONVICTED</span> of Serial Killings?</p>
+            <div class="my-6 p-5 border border-stone-800 bg-white/80 text-base space-y-3">
+                <p>[ ] Option A: A person who is <span class="font-bold underline">ACCUSED</span> of Serial Killings?</p>
+                <p>[ ] Option B: A person who is <span class="font-bold underline">CONVICTED</span> of Serial Killings?</p>
             </div>
 
-            <div class="p-5 border-l-8 border-red-800 bg-stone-200 text-base my-6 shadow-md">
+            <div class="p-5 border-2 border-black bg-stone-200 text-base my-6">
                 <p class="font-bold">If your answer is either: Congratulations! You're wrong—just like the rest of our class.</p>
-                <p class="font-bold mt-3 text-lg">A person who has <span class="red-circle">COMMITTED</span> those murders is a Serial Killer!</p>
+                <p class="font-bold mt-3">A person who has <span class="yellow-highlight">COMMITTED</span> those murders is a Serial Killer!</p>
             </div>
         </article>
 
-        <!-- ================= THE BLACK BOOK: COMM-LINK (COMMENTS) ================= -->
+
+        <article class="telegram-paper p-8 relative transform -rotate-1">
+            <div class="masking-tape" style="transform: translateX(-50%) rotate(-1.5deg);"></div>
+
+            <div class="bg-black text-stone-200 p-2 flex justify-between items-center mb-6">
+                <span class="text-xs font-bold tracking-widest">FIELD REPORT // EXHIBIT C (PAGE 04 / 08)</span>
+                <span class="font-mono text-[10px]">2,000+ CASES ARCHIVE</span>
+            </div>
+
+            <h2 class="font-bold text-xl uppercase mb-3">03. FOUR DECADES & AN ENCRYPTED VAULT</h2>
+
+            <p class="text-base mb-4 leading-relaxed">
+                Analyzing <span class="font-bold underline">132 serial killers (1997–2025)</span> required four decades of patience, effort, and an army of dedicated students working with SAD.
+            </p>
+
+            <div class="bg-black text-stone-200 p-5 text-base my-6 relative shadow-lg">
+                <span class="handwritten-note handwritten-red text-2xl absolute -top-4 right-4 bg-stone-900 px-3 border border-red-500">2,000+ Files!</span>
+                <span class="font-bold block uppercase tracking-wider mb-2">ENCRYPTED VAULT INTEL:</span>
+                Tucked away in his system, Dr. SAD maintains <span class="font-bold underline">30+ encrypted folders detailing 2,000+ multiple-killing cases</span> (Serial, Mass, Spree). Absolute goldmine!
+            </div>
+
+            <h3 class="font-bold text-lg uppercase mt-6 mb-2">04. "MONEY TALKS" & INDIAN MOTIVATION</h3>
+            <div class="border-2 border-black p-4 text-base mb-4 bg-stone-300/50">
+                <span class="font-bold block uppercase mb-1">CRIMINAL JUSTICE SYSTEM REALITY:</span>
+                "The Indian Criminal Justice System has been bought by the Rich! Who sold them out? They did it themselves!"
+                <span class="block text-xs italic mt-1">— Ref: "Dirty Cash (Money Talks)" by Stevie V (See: Nithari Case)</span>
+            </div>
+        </article>
+
+
+        <article class="telegram-paper p-8 relative transform rotate-1">
+            <div class="masking-tape" style="transform: translateX(-50%) rotate(2.5deg);"></div>
+
+            <div class="bg-black text-stone-200 p-2 flex justify-between items-center mb-6">
+                <span class="text-xs font-bold tracking-widest">FIELD REPORT // EXHIBIT D (PAGE 05 / 08)</span>
+                <span class="font-mono text-[10px]">PRISON INCIDENT RECORD</span>
+            </div>
+
+            <h2 class="font-bold text-xl uppercase mb-3">05. PRISON INTERVIEW CRISIS</h2>
+
+            <div class="bg-stone-900 text-stone-100 p-6 my-4 text-base relative border-2 border-black overflow-hidden shadow-xl">
+                <span class="font-bold block uppercase text-lg mb-2 text-red-500">PRISON INCIDENT LOG:</span>
+                <p class="relative z-10 leading-relaxed">
+                    Dr. SAD interviewed a hardened serial strangler. The interrogation probed so deep into his consciousness that the killer suffered an existential breakdown and <span class="font-bold underline">attempted suicide in prison the following day</span>! Prison counselors begged Dr. SAD to pause interviews!
+                </p>
+            </div>
+
+            <div class="p-3 my-4 bg-stone-300 text-black border-2 border-black font-bold text-sm text-center uppercase tracking-wider">
+                STUDENT HAZARD WARNING: To avoid experiencing what that prisoner suffered, just nod along with Dr. SAD. Or he might talk to you!
+            </div>
+        </article>
+
+
+        <article class="telegram-paper p-8 relative transform -rotate-1">
+            <div class="masking-tape" style="transform: translateX(-50%) rotate(-2deg);"></div>
+
+            <div class="bg-black text-stone-200 p-2 flex justify-between items-center mb-6">
+                <span class="text-xs font-bold tracking-widest">FIELD REPORT // EXHIBIT E (PAGE 06 / 08)</span>
+                <span class="font-mono text-[10px]">ARSENAL ANALYSIS</span>
+            </div>
+
+            <h2 class="font-bold text-xl uppercase mb-3">06. INDIAN WEAPONS OF CHOICE</h2>
+
+            <p class="text-base mb-4 leading-relaxed">
+                Firearms? Don't be silly, this isn't America. Knives? Sure, so shiny that even the killers get fascinated. But Indian serial killers don't need to look far for disposable weapons:
+            </p>
+
+            <div class="my-4 space-y-3">
+                <div class="p-4 border border-black bg-white/70">
+                    <span class="font-bold block text-lg">Pajama Drawstring</span>
+                    <p class="text-sm">Disposable, available in every household. Zero suspicion, maximum lethal efficiency.</p>
+                </div>
+                <div class="p-4 border border-black bg-white/70">
+                    <span class="font-bold block text-lg">Farmer's Sickle</span>
+                    <p class="text-sm">An innocent farmer walking to his fields... Who would suspect him? Harvests crops... or heads!</p>
+                </div>
+            </div>
+
+            <blockquote class="my-4 p-4 bg-stone-200 border-l-4 border-black text-base italic">
+                "Who knows... Maybe the wheat flour sitting in your kitchen came from a crop harvested by THAT VERY SICKLE..."
+            </blockquote>
+        </article>
+
+
+        <article class="telegram-paper p-8 relative transform rotate-1">
+            <div class="masking-tape" style="transform: translateX(-50%) rotate(1deg);"></div>
+
+            <div class="bg-black text-stone-200 p-2 flex justify-between items-center mb-6">
+                <span class="text-xs font-bold tracking-widest">FIELD REPORT // EXHIBIT F (PAGE 07 / 08)</span>
+                <span class="font-mono text-[10px]">INTERPOL ACCORD</span>
+            </div>
+
+            <h2 class="font-bold text-xl uppercase mb-3">07. INTERPOL AFRICAN ACCORD</h2>
+
+            <p class="text-base mb-4 leading-relaxed">
+                Today’s interactive masterclass brought together Dr. SAD and an esteemed <span class="font-bold underline yellow-highlight">INTERPOL Officer from Africa</span>, showcasing how local field empiricism connects with international criminal intelligence.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-6 my-6">
+                <div class="polaroid transform -rotate-3 w-56 mx-auto">
+                    <div class="h-32 bg-stone-800 mb-2 flex items-center justify-center text-stone-500 font-bold text-xs">ARCHIVE MAP</div>
+                    <div class="text-center handwritten-note text-lg">Suspected ARK Location</div>
+                </div>
+                <div class="polaroid transform rotate-2 w-56 mx-auto">
+                    <div class="h-32 bg-stone-900 mb-2 flex items-center justify-center text-stone-300 font-bold text-xs">
+                        <span class="heavy-redaction">CLASSIFIED</span>
+                    </div>
+                    <div class="text-center handwritten-note handwritten-red text-lg">Grab it now.</div>
+                </div>
+            </div>
+        </article>
+
+
         <article class="black-book p-8 relative transform -rotate-1">
-            <!-- White tape label mimicking the black book image -->
             <div class="absolute top-6 left-1/2 transform -translate-x-1/2 bg-stone-200 text-black px-6 py-2 font-bold uppercase tracking-widest text-sm border border-black shadow-sm transform -rotate-2">
-                CLASSIFIED COMM-LINK
+                CLASSIFIED COMM-LINK (PAGE 08 / 08)
             </div>
             
             <div class="mt-16 text-center">
-                <p class="handwritten-note text-stone-400 text-2xl mb-8">Secure channel open. Leave your field notes below.</p>
+                <h2 class="font-bold text-xl uppercase mb-2">CASE CONCLUDED — TOKEN OF RESPECT</h2>
+                <p class="handwritten-note text-stone-400 text-2xl mb-6">Secure channel open. Leave your field notes below.</p>
 
-               <!-- GISCUS COMM-LINK START -->
-<div class="mt-8 text-left border-2 border-stone-800 bg-[#1c1c1c] p-4 shadow-inner">
-    <!-- <script src="https://giscus.app/client.js"
-        data-repo="amemimimimimi-bit/doc-evidence-board"
-        data-repo-id="R_kgDOUGVHdQ"
-        data-category="General"
-        data-category-id="DIC_kwDOUGVHdc4DEU8K"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="dark"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-</script> -->
-</div>
-<!-- GISCUS COMM-LINK END -->
-            </div>
+                <div class="text-left bg-stone-200 p-4 border border-black text-black">
+                    <script src="https://giscus.app/client.js"
+                            data-repo="amemimimimimi-bit/doc-evidence-board"
+                            data-repo-id="R_kgDOUGVHdQ"
+                            data-category="General"
+                            data-category-id="DIC_kwDOUGVHdc4DEU8K"
+                            data-mapping="pathname"
+                            data-strict="0"
+                            data-reactions-enabled="1"
+                            data-emit-metadata="0"
+                            data-input-position="bottom"
+                            data-theme="dark"
+                            data-lang="en"
+                            crossorigin="anonymous"
+                            async>
+                    </script>
+                </div>
+                </div>
             
             <div class="border-t border-stone-600 pt-4 mt-8 flex justify-between items-center text-xs text-stone-500 uppercase tracking-widest">
-                <span>FILE: NFSU-SAD</span>
-                <span>END DOSSIER</span>
+                <span>CURATED BY AME</span>
+                <span>FINIS / END DOSSIER</span>
             </div>
         </article>
 
