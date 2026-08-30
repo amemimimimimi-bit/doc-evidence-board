@@ -3,77 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The SAD Archive | Master Dossier</title>
+    <title>The SAD Archive | File Drawer</title>
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Caveat:wght@700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
-            background-color: #161616;
-            background-image: url("https://www.transparenttextures.com/patterns/stucco.png");
+            background-color: #141414;
             font-family: 'Special Elite', monospace;
             color: #111;
         }
-        .craft-cover {
-            background-color: #b59f84;
-            background-image: url("https://www.transparenttextures.com/patterns/cardboard-flat.png");
-            box-shadow: 10px 10px 30px rgba(0,0,0,0.8);
+        .drawer-container {
+            background-color: #26211c;
+            background-image: url("https://www.transparenttextures.com/patterns/dark-leather.png");
+            box-shadow: inset 0 0 40px #000, 0 10px 30px rgba(0,0,0,0.9);
+            border: 4px solid #111;
         }
-        .masking-tape {
-            background-color: #dcd3b6;
-            background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
-            height: 40px;
-            width: 160px;
-            position: absolute;
-            top: -20px;
-            left: 50%;
-            transform: translateX(-50%) rotate(-2deg);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.4);
-            z-index: 10;
+        .file-tab {
+            background-color: #d1c5a5;
+            box-shadow: 2px -2px 5px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .file-tab:hover {
+            transform: translateY(-8px);
+            background-color: #e3decb;
         }
         .blink-tap {
-            animation: blink 1.2s infinite;
+            animation: blink 1.5s infinite;
         }
         @keyframes blink {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.3; transform: scale(0.98); }
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
         }
         .handwritten {
             font-family: 'Caveat', cursive;
         }
     </style>
 </head>
-<body class="min-h-screen flex items-center justify-center p-6">
+<body class="min-h-screen flex items-center justify-center p-4">
 
-    <!-- Master Cover Card (Photo #1: An Archivist's Tale) -->
-    <div class="craft-cover w-full max-w-xl p-10 relative transform rotate-1 border border-stone-800 text-center group">
-        <div class="masking-tape"></div>
+    <!-- The Open Drawer Container -->
+    <div class="drawer-container w-full max-w-2xl p-8 rounded relative min-h-[450px] flex flex-col items-center justify-end">
         
-        <div class="text-xs font-bold uppercase tracking-widest border-b-2 border-stone-900 pb-3 mb-6">
-            NFSU COVERT OPERATIONS // EYES ONLY
+        <!-- Drawer Label at Top -->
+        <div class="absolute top-4 left-6 bg-stone-900 text-stone-300 px-4 py-1 text-xs uppercase tracking-widest border border-stone-700">
+            CABINET 01 // ARCHIVAL STORAGE
         </div>
 
-        <span class="handwritten text-red-700 text-3xl block -rotate-2 mb-2">Primary Intelligence Gateway</span>
-        
-        <h1 class="font-black text-5xl uppercase tracking-tighter leading-none py-6 border-y-4 border-stone-900 my-4">
-            AN ARCHIVIST'S <span class="bg-black text-stone-100 px-2">TALE</span>
-        </h1>
+        <!-- The Lone File Inside the Drawer -->
+        <a href="archive.html" class="file-tab w-full max-w-lg p-6 rounded-t-lg relative border-t-2 border-stone-500 cursor-pointer block group">
+            
+            <!-- File Label Tab -->
+            <div class="absolute -top-7 left-6 bg-[#e3decb] px-4 py-1 border-t border-x border-stone-600 text-xs font-bold uppercase tracking-wider">
+                FILE NO. 01: ORIGINS & EPISODES
+            </div>
 
-        <p class="text-xs uppercase tracking-widest text-stone-800 font-bold mb-8">
-            The Life, Field Research & Chaos of Prof. Dr. SAD
-        </p>
+            <div class="bg-[#e3decb] p-6 border border-stone-400 shadow-inner relative">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <span class="text-[10px] font-mono text-stone-600 block">STATUS: UNLOCKED</span>
+                        <h2 class="font-bold text-lg uppercase tracking-tight text-stone-900 mt-1">
+                            An Interactive Session with Prof. Dr. SAD
+                        </h2>
+                    </div>
+                    <span class="blink-tap bg-red-900 text-white text-[10px] px-2 py-1 uppercase tracking-widest font-bold">
+                        [TAP TO INSPECT]
+                    </span>
+                </div>
+                
+                <p class="text-xs mt-3 text-stone-700 italic">
+                    Contains: Origin of the archive, scrolling revelations, and the 28-year vault history.
+                </p>
 
-        <!-- Interactive Gateway Button with Blinking Tap Indicator -->
-        <a href="archive.html" class="inline-block bg-stone-900 text-stone-100 px-8 py-4 font-bold uppercase tracking-widest text-sm border-2 border-stone-700 shadow-xl hover:bg-red-950 transition-all relative">
-            <span class="blink-tap absolute -top-4 right-2 bg-red-700 text-white text-[10px] px-2 py-0.5 rounded uppercase tracking-wider font-bold">
-                [TAP TO INSPECT]
-            </span>
-            [ ENTER THE DOSSIER ]
+                <div class="mt-4 pt-3 border-t border-stone-400 flex justify-between items-center text-xs font-bold text-red-800">
+                    <span>INDEX: EXECUTING DOSSIER ACCESS</span>
+                    <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+                </div>
+            </div>
         </a>
 
-        <div class="mt-8 pt-4 border-t border-stone-800 text-[10px] uppercase tracking-widest text-stone-700">
-            Curated by Ame // Teachers' Day Special Edition
+        <!-- Drawer Floor Shadow -->
+        <div class="absolute bottom-2 text-stone-500 text-[10px] uppercase tracking-widest">
+            Drawer Slot Active — Select file to open case board
         </div>
     </div>
 
 </body>
 </html>
+
